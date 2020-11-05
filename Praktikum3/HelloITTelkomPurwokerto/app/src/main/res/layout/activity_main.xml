@@ -53,7 +53,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toEndOf="@+id/textLblName"
-        app:layout_constraintTop_toBottomOf="@+id/textHeader" />
+        app:layout_constraintTop_toBottomOf="@+id/textHeader"
+        android:autofillHints="" />
     <EditText
         android:id="@+id/editMyNim"
         android:layout_width="0dp"
@@ -66,6 +67,7 @@
         android:text="@string/my_nim"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textLblNim"
-        app:layout_constraintTop_toBottomOf="@+id/editMyName" />
+        app:layout_constraintTop_toBottomOf="@+id/editMyName"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
