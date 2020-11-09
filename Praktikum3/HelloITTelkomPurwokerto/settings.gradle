@@ -1,3 +1,0 @@
-include ':lifecycleapp'
-include ':app'
-rootProject.name = "Hello IT Telkom Purwokerto"
