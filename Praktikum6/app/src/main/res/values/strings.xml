@@ -5,6 +5,9 @@
     <string name="tampil_list">Tampil List</string>
     <string name="tampil_grid">Tampil Grid</string>
     <string name="tampil_card_view">Tampil Card View</string>
+    <string name="todo">TODO</string>
+    <string name="favorite">favorite</string>
+    <string name="share">share</string>
     <string-array name="data_name">
         <item>Wisata Pagubugan</item>
         <item>The Village Purwokerto</item>

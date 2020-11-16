@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.puspawahyuningtias_18102137.praktikum6.adapter.CardViewMyDataAdapter
 import com.puspawahyuningtias_18102137.praktikum6.adapter.GridMyDataAdapter
 import com.puspawahyuningtias_18102137.praktikum6.adapter.ListMyDataAdapter
 import kotlinx.android.synthetic.main.activity_main.*
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                 showRecyclerGrid()
             }
             R.id.action_cardview -> {
+                showRecyclerCardView()
             }
         }
     }
@@ -67,4 +69,11 @@ class MainActivity : AppCompatActivity() {
         val gridMyDataAdapter = GridMyDataAdapter(list)
         rv_mydata.adapter = gridMyDataAdapter
     }
+
+    private fun showRecyclerCardView() {
+        rv_mydata.layoutManager = LinearLayoutManager(this)
+        val cardViewMyDataAdapter = CardViewMyDataAdapter (list)
+        rv_mydata.adapter = cardViewMyDataAdapter
+    }
+
 }
