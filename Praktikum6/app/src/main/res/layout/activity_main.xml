@@ -8,6 +8,7 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_mydata"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="16dp"
@@ -18,5 +19,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="list item"/>
+        tools:listitem="list item" />
 </androidx.constraintlayout.widget.ConstraintLayout>
