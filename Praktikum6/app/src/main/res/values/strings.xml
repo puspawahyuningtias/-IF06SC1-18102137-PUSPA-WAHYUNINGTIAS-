@@ -12,24 +12,44 @@
     <string-array name="data_lat">
         <item>-7.333797</item>
         <item>-7.374473</item>
+        <item>-7.7233377</item>
+        <item>-7.3397378</item>
+        <item>-7.5598292</item>
+        <item>-7.4808628</item>
+        <item>-7.7596395</item>
+        <item>-7.5190073</item>
+        <item>-7.7992419</item>
+        <item>-7.3090214</item>
+        <item>-7.3189248</item>
+        <item>-7.355515</item>
     </string-array>
     <string-array name="data_lang">
         <item>109.206959</item>
         <item>109.240532</item>
+        <item>109.4004996</item>
+        <item>109.2056378</item>
+        <item>109.7152407</item>
+        <item>109.7469528</item>
+        <item>109.458277</item>
+        <item>109.2123145</item>
+        <item>109.7200772</item>
+        <item>109.206589</item>
+        <item>109.2395023</item>
+        <item>109.2395023</item>
     </string-array>
     <string-array name="data_name">
         <item>Wisata Pagubugan</item>
         <item>The Village Purwokerto</item>
-        <!--        <item>Bukit Sianco</item>-->
-        <!--        <item>Bukit Agaran</item>-->
-        <!--        <item>Bukit Banda</item>-->
-        <!--        <item>Wasiat Bukit Putri</item>-->
-        <!--        <item>Bukit Hud</item>-->
-        <!--        <item>Watu Meja</item>-->
-        <!--        <item>Taman Bunga Asmara Pantai Ambal</item>-->
-        <!--        <item>Curug Jenggala</item>-->
-        <!--        <item>Sendang Bidadari</item>-->
-        <!--        <item>Caping Park Purwokerto</item>-->
+        <item>Bukit Sianco</item>
+        <item>Bukit Agaran</item>
+        <item>Bukit Banda</item>
+        <item>Wasiat Bukit Putri</item>
+        <item>Bukit Hud</item>
+        <item>Watu Meja</item>
+        <item>Taman Bunga Asmara Pantai Ambal</item>
+        <item>Curug Jenggala</item>
+        <item>Sendang Bidadari</item>
+        <item>Caping Park Purwokerto</item>
     </string-array>
     <string-array name="data_description">
         <item>Berada di lereng Gunung Slamet, wisata Pagubugan akan membawa Anda merasakan betapa
@@ -46,30 +66,30 @@
         sini: naik perahu mengitari kanal buatan di sekitar taman rekreasi, memberi makan aneka binatang
         (burung, kelinci, sapi, domba), menunggang kuda, foto-foto dengan kostum Belanda, dan masih banyak
         lagi!</item>
-        <!--        <item>Kalau kamu termasuk orang dengan prinsip “apapun akan kutempuh demi sunset yang indah”, Bukit Sianco tidak boleh dilewatkan.Untuk sampai di sini, memang butuh perjuangan. Jalan menuju puncak bukit yang belum mulus, maka pastikan kendaraan kamu dalam kondisi yang prima ya. Selanjutnya pengunjung bisa melanjutkan dengan treking hingga sampai di puncak. Tapi tenang, perjuangan panjang kamu akan terbayar kok sesampainya di puncak bukit. Dari sini, kamu bisa memandangi lansekap kota yang indah bahkan laut pun bisa terlihat!</item>-->
-        <!--        <item>Ingin menikmati indahnya Purwokerto dari angle lain? Mampir saja ke Bukit Agaran yang menawarkan pemandangan menakjubkan Purwokerto dari atas! Di bukit ini tersedia banyak sekali spot foto yang bisa kamu manfaatkan untuk berfoto ria. Seperti misalnya replika tangan raksasa dan rumah cinta.Jika cuaca cerah, kamu bisa menikmati pemandangan cantik Gunung Slamet yang berdiri megah dengan begitu jelas. Suasana akan berubah lebih romantis di malam hari karena pemandangan berubah menjadi cahaya kerlap kerlip lampu Purwokerto dari kejauhan.</item>-->
-        <!--        <item>Berada di ketinggian 374 mdpl, Bukit Banda siap memberikan pemandangan memukau untukmu. Saatnya bangun dini hari dan berlomba menuju puncak Bukit Banda sebelum matahari terbit. Sebuah perjuangan memang, tapi percaya deh semua usaha kamu akan terbayar saat melihat lautan awan yang indah. Yup, pemandangan ini biasanya kamu temukan di Dieng tapi pesona negeri di atas awan ala Kebumen juga tidak kalah cantik lho.</item>-->
-        <!--        <item>Tempat ini cocok untuk kamu yang ingin melepaskan penat dari rutinitas dan hiruk pikuk perkotaan. Hutan pinus yang masih asri membuat area Wasiat Bukit Putri terasa sejuk. Fasilitas di sini juga sudah lengkap. Mau cari warung hingga toilet juga ada.</item>-->
-        <!--        <item>Menikmati pemandangan alam pun bisa dengan gaya, dan bila kamu menyambangi Kebumen, berkunjung ke Bukit Hud menjadi keharusan. Dari puncak Bukit Hud, kamu akan mendapati hamparan Pantai Karangbolong dan Pantai Suwuk yang luar biasa, dengan Laut Selatan sebagai background.</item>-->
-        <!--        <item>Purwokerto memiliki spot istimewa untuk bisa menyaksikan pusat kota dan sekelilingnya dari ketinggian. Spot seru tersebut dinamai Watu Meja. Lokasinya berada di Bukit Badar, desa Tumiyang, Banyumas. Yang ditawarkan adalah lansekap alam perbukitan, Gunung Slamet dan aliran Sungai Serau.Watu Meja menjadi spot yang menarik untuk berswafoto. Batu di pinggiran tebing menjadi salah satu titik yang kerap dijadikan sebagai spot untuk berfoto dengan background di atas.</item>-->
-        <!--        <item>Taman bunga ini berada tidak jauh dari pintu masuk Pantai Ambal. Luasnya, mencapai 600m2! Sejauh mata memandang seluruh sudutnya penuh dengan bunga berwarna-warni. Cantik dan romantis deh kalau bawa orang tersayang ke sini. Selain bisa berfoto di antara bunga pagoda, bunga kertas, dan bunga matahari, di sini juga sudah disediakan spot foto khusus untuk para pengunjung. Sebuah instalasi berbentuk hati lengkap dengan tulisan “Asmara” bisa kamu gunakan untuk berfoto atau melamar sang kekasih. Dijamin deh si dia langsung terima lamaran kamu! </item>-->
-        <!--        <item>Seperti apa sih surga itu? Tak ada yang bisa menjawabnya, namun mungkin cuilannya bisa kamu saksikan di Curug Jenggala ini. Berada di Banyumas, curug yang masuk di wilayah Baturaden ini terjadi karena pertemuan beberapa sungai. Alhasil, air yang tercurah dari ujung bukit pun melimpah ruah, dan juga mengalir deras.Cara menikmatinya? Bisa dengan berada di bebatuan yang tak jauh dari titik jatuhnya air. Dijamin kamu bisa basah kuyup. Tapi ingat, ekstra hati-hati ya! Cara lain adalah dengan berada di titik tertentu, yang oleh pihak pengelola memang disiapkan secara khusus. Ada dek kayu berbentuk hati tepat berada di depan curug ini, pas sebagai spot berfoto, apalagi dengan pasangan. Ah, so sweet!</item>-->
-        <!--        <item>Warga lokal meyakini tempat ini sebagai tempat petilasan dan untuk bermeditasi. Jika memang demikian, pemilihan Sendang Bidadari sebagai tempat berkegiatan itu merupakan hal yang tepat. Kok bisa? Jika berkunjung ke sana, kamu akan mendapati tempat dengan pemandangan yang keren, atmosfer yang teduh, suasana yang tenang dan udara yang segar, pas banget untuk bermeditasi. Selain itu, lansekap di sekitar air terjun ini juga instagenic abis. Kapan lagi kamu bisa menyaksikan air terjun, dengan air yang jernih dan menyegarkan, menumpahkan airnya ke dalam sebuah ‘gua’. </item>-->
-        <!--        <item>Bisa dibilang, inilah surganya untuk para pecinta selfie. Pasti nggak akan bosan deh lama-lama main di sini karena ada banyak spot menarik untuk berfoto.Mau tahu bocorannya? Mulai dari lantai kaca yang begitu menantang hingga instalasi warna-warni pasti menarik untuk jadi latar fotomu. Ada juga instalasi ayunan yang akan membawamu berayun di ketinggian, rasanya seperti melayang di udara!Berkeliling tempat ini pasti seru deh. Kamu nggak perlu khawatir kepanasan karena setiap pengunjung yang datang akan dibagikan topi caping yang bisa kamu pakai selama berada di sini. Unik kan?</item>-->
+        <item>Kalau kamu termasuk orang dengan prinsip “apapun akan kutempuh demi sunset yang indah”, Bukit Sianco tidak boleh dilewatkan.Untuk sampai di sini, memang butuh perjuangan. Jalan menuju puncak bukit yang belum mulus, maka pastikan kendaraan kamu dalam kondisi yang prima ya. Selanjutnya pengunjung bisa melanjutkan dengan treking hingga sampai di puncak. Tapi tenang, perjuangan panjang kamu akan terbayar kok sesampainya di puncak bukit. Dari sini, kamu bisa memandangi lansekap kota yang indah bahkan laut pun bisa terlihat!</item>
+        <item>Ingin menikmati indahnya Purwokerto dari angle lain? Mampir saja ke Bukit Agaran yang menawarkan pemandangan menakjubkan Purwokerto dari atas! Di bukit ini tersedia banyak sekali spot foto yang bisa kamu manfaatkan untuk berfoto ria. Seperti misalnya replika tangan raksasa dan rumah cinta.Jika cuaca cerah, kamu bisa menikmati pemandangan cantik Gunung Slamet yang berdiri megah dengan begitu jelas. Suasana akan berubah lebih romantis di malam hari karena pemandangan berubah menjadi cahaya kerlap kerlip lampu Purwokerto dari kejauhan.</item>
+        <item>Berada di ketinggian 374 mdpl, Bukit Banda siap memberikan pemandangan memukau untukmu. Saatnya bangun dini hari dan berlomba menuju puncak Bukit Banda sebelum matahari terbit. Sebuah perjuangan memang, tapi percaya deh semua usaha kamu akan terbayar saat melihat lautan awan yang indah. Yup, pemandangan ini biasanya kamu temukan di Dieng tapi pesona negeri di atas awan ala Kebumen juga tidak kalah cantik lho.</item>
+        <item>Tempat ini cocok untuk kamu yang ingin melepaskan penat dari rutinitas dan hiruk pikuk perkotaan. Hutan pinus yang masih asri membuat area Wasiat Bukit Putri terasa sejuk. Fasilitas di sini juga sudah lengkap. Mau cari warung hingga toilet juga ada.</item>
+        <item>Menikmati pemandangan alam pun bisa dengan gaya, dan bila kamu menyambangi Kebumen, berkunjung ke Bukit Hud menjadi keharusan. Dari puncak Bukit Hud, kamu akan mendapati hamparan Pantai Karangbolong dan Pantai Suwuk yang luar biasa, dengan Laut Selatan sebagai background.</item>
+        <item>Purwokerto memiliki spot istimewa untuk bisa menyaksikan pusat kota dan sekelilingnya dari ketinggian. Spot seru tersebut dinamai Watu Meja. Lokasinya berada di Bukit Badar, desa Tumiyang, Banyumas. Yang ditawarkan adalah lansekap alam perbukitan, Gunung Slamet dan aliran Sungai Serau.Watu Meja menjadi spot yang menarik untuk berswafoto. Batu di pinggiran tebing menjadi salah satu titik yang kerap dijadikan sebagai spot untuk berfoto dengan background di atas.</item>
+        <item>Taman bunga ini berada tidak jauh dari pintu masuk Pantai Ambal. Luasnya, mencapai 600m2! Sejauh mata memandang seluruh sudutnya penuh dengan bunga berwarna-warni. Cantik dan romantis deh kalau bawa orang tersayang ke sini. Selain bisa berfoto di antara bunga pagoda, bunga kertas, dan bunga matahari, di sini juga sudah disediakan spot foto khusus untuk para pengunjung. Sebuah instalasi berbentuk hati lengkap dengan tulisan “Asmara” bisa kamu gunakan untuk berfoto atau melamar sang kekasih. Dijamin deh si dia langsung terima lamaran kamu! </item>
+        <item>Seperti apa sih surga itu? Tak ada yang bisa menjawabnya, namun mungkin cuilannya bisa kamu saksikan di Curug Jenggala ini. Berada di Banyumas, curug yang masuk di wilayah Baturaden ini terjadi karena pertemuan beberapa sungai. Alhasil, air yang tercurah dari ujung bukit pun melimpah ruah, dan juga mengalir deras.Cara menikmatinya? Bisa dengan berada di bebatuan yang tak jauh dari titik jatuhnya air. Dijamin kamu bisa basah kuyup. Tapi ingat, ekstra hati-hati ya! Cara lain adalah dengan berada di titik tertentu, yang oleh pihak pengelola memang disiapkan secara khusus. Ada dek kayu berbentuk hati tepat berada di depan curug ini, pas sebagai spot berfoto, apalagi dengan pasangan. Ah, so sweet!</item>
+        <item>Warga lokal meyakini tempat ini sebagai tempat petilasan dan untuk bermeditasi. Jika memang demikian, pemilihan Sendang Bidadari sebagai tempat berkegiatan itu merupakan hal yang tepat. Kok bisa? Jika berkunjung ke sana, kamu akan mendapati tempat dengan pemandangan yang keren, atmosfer yang teduh, suasana yang tenang dan udara yang segar, pas banget untuk bermeditasi. Selain itu, lansekap di sekitar air terjun ini juga instagenic abis. Kapan lagi kamu bisa menyaksikan air terjun, dengan air yang jernih dan menyegarkan, menumpahkan airnya ke dalam sebuah ‘gua’. </item>
+        <item>Bisa dibilang, inilah surganya untuk para pecinta selfie. Pasti nggak akan bosan deh lama-lama main di sini karena ada banyak spot menarik untuk berfoto.Mau tahu bocorannya? Mulai dari lantai kaca yang begitu menantang hingga instalasi warna-warni pasti menarik untuk jadi latar fotomu. Ada juga instalasi ayunan yang akan membawamu berayun di ketinggian, rasanya seperti melayang di udara!Berkeliling tempat ini pasti seru deh. Kamu nggak perlu khawatir kepanasan karena setiap pengunjung yang datang akan dibagikan topi caping yang bisa kamu pakai selama berada di sini. Unik kan?</item>
     </string-array>
     <string-array name="data_photo">
         <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2019/09/18-1-by-@miftakhulmukhasin-@hengki_pamungkas-740x294.jpg</item>
         <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/21-2-by-@The-Village-Purwokerto-740x740.jpg</item>
-        <!--        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/13-1-Bukit-Sianco-by-dwiecahyo-740x555.jpg</item>-->
-        <!--        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/17-1-by-@biilliiaa-@lulu_luyas-@gensis_uye-740x740.jpg</item>-->
-        <!--        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/11-2-Bukit-Banda-by-rifkiantariksa-@-bong_bong08-@-rifkiantariksa-740x740.jpg</item>-->
-        <!--        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/12-1-Wasiat-Bukit-Putri-by-sudirno_said-@-lukman_banda-@-dolansadang.jpg</item>-->
-        <!--        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/11-2-by-@aconk_van_houtten@fatkhanaziiz-740x372.jpg</item>-->
-        <!--        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/4-2-by-@her_journeys@renymei14-740x372.jpg</item>-->
-        <!--        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/6-1-Taman-Bunga-Asmara-Pantai-Ambal-by-cutmiiemiie-@-auraniiii_-@-nadyapuspitasr_.jpg</item>-->
-        <!--        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/1a-1-by-onyone96-740x493.jpg</item>-->
-        <!--        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/1b-3-by-@wildanuraulia@popeye.60-740x372.jpg</item>-->
-        <!--        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/1-2-Caping-Park-by-anantigesta-@-aidahwahyu8-@-veronikasop.jpg</item>-->
+        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/13-1-Bukit-Sianco-by-dwiecahyo-740x555.jpg</item>
+        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/17-1-by-@biilliiaa-@lulu_luyas-@gensis_uye-740x740.jpg</item>
+        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/11-2-Bukit-Banda-by-rifkiantariksa-@-bong_bong08-@-rifkiantariksa-740x740.jpg</item>
+        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/12-1-Wasiat-Bukit-Putri-by-sudirno_said-@-lukman_banda-@-dolansadang.jpg</item>
+        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/11-2-by-@aconk_van_houtten@fatkhanaziiz-740x372.jpg</item>
+        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/4-2-by-@her_journeys@renymei14-740x372.jpg</item>
+        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/6-1-Taman-Bunga-Asmara-Pantai-Ambal-by-cutmiiemiie-@-auraniiii_-@-nadyapuspitasr_.jpg</item>
+        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/1a-1-by-onyone96-740x493.jpg</item>
+        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/1b-3-by-@wildanuraulia@popeye.60-740x372.jpg</item>
+        <item>https://indonesia.tripcanvas.co/id/wp-content/uploads/sites/2/2020/03/1-2-Caping-Park-by-anantigesta-@-aidahwahyu8-@-veronikasop.jpg</item>
     </string-array>
     <string name="title_activity_detail">ScrollingActivity</string>
     <string name="large_text">
