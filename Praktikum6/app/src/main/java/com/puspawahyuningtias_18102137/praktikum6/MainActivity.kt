@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showRecyclerList() {
         rv_mydata.layoutManager = LinearLayoutManager(this)
-        val listMyDataAdapter = ListMyDataAdapter(list)
+        val listMyDataAdapter = ListMyDataAdapter(list, this@MainActivity)
         rv_mydata.adapter = listMyDataAdapter
     }
 
