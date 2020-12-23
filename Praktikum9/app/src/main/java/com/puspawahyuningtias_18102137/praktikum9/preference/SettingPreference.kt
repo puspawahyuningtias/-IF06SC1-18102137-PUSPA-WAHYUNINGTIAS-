@@ -24,5 +24,15 @@ class SettingPreference {
             editor.putBoolean(THEME, value.isDarkTheme)
             editor.apply()
         }
+        fun getSetting(): SettingModel {
+            val model = SettingModel()
+            model.name = preferences.getString(NAME, "")
+            model.email = preferences.getString(EMAIL, "")
+            model.age = preferences.getInt(AGE, 0)
+            model.phoneNumber = preferences.getString(PHONE_NUMBER, "")
+            model.isDarkTheme = preferences.getBoolean(THEME, false)
+            return model
+        }
+
     }
 }
