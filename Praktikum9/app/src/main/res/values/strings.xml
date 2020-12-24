@@ -11,8 +11,9 @@
     <string name="tv_theme">Theme Mode</string>
     <string name="default_theme">System Default</string>
     <string name="setting">SETTING</string>
-    <string name="main_title">main_title</string>
+    <string name="main_title">Dashboard</string>
     <string name="dark_theme">Tema Gelap</string>
+    <string name="light_theme">Tema Terang</string>
     <string name="yes">Ya</string>
     <string name="no">Tidak</string>
     <string name="save">SIMPAN</string>
