@@ -3,7 +3,6 @@ package com.puspawahyuningtias_18102137.praktikum9.preference
 import android.content.Context
 import com.puspawahyuningtias_18102137.praktikum9.SettingModel
 
-class SettingPreference {
     internal class SettingPreference(context: Context) {
         companion object {
             private const val PREFS_NAME = "setting_pref"
@@ -35,4 +34,3 @@ class SettingPreference {
         }
 
     }
-}
