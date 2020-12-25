@@ -1,8 +1,10 @@
 package com.puspawahyuningtias_18102137.praktikum9
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.puspawahyuningtias_18102137.praktikum9.databinding.ActivityMainBinding
 import com.puspawahyuningtias_18102137.praktikum9.preference.SettingPreference
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         }
         binding.settingModel = settingModel
     }
-    fun openSetting(){
+    private fun openSetting(){
         val intent = Intent(this@MainActivity, SettingPreferenceActivity::class.java)
         startActivityForResult(intent, REQUEST_CODE)
     }
@@ -49,5 +51,21 @@ class MainActivity : AppCompatActivity() {
                 showExistingPreference()
             }
         }
+    }
+    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+        R.id.settings -> {
+            // User chose the "Settings" item
+            openSetting()
+            true
+        }
+        else -> {
+            // If we got here, the user's action was not recognized.
+            // Invoke the superclass to handle it.
+            super.onOptionsItemSelected(item)
+        }
+    }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu,menu)
+        return super.onCreateOptionsMenu(menu)
     }
 }
