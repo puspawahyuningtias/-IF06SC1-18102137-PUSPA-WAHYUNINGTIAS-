@@ -1,15 +1,17 @@
 package com.puspawahyuningtias_18102137.praktikum9.preference
 
 import android.content.Context
-import com.puspawahyuningtias_18102137.praktikum9.SettingModel
+import com.puspawahyuningtias_18102137.praktikum9.data.SettingModel
 
     internal class SettingPreference(context: Context) {
         companion object {
             private const val PREFS_NAME = "setting_pref"
             private const val NAME = "name"
             private const val EMAIL = "email"
+            private const val ADRRESS = "address"
             private const val AGE = "age"
             private const val PHONE_NUMBER = "phone"
+            private const val JK = "jk"
             private const val THEME = "theme"
         }
 
@@ -18,8 +20,10 @@ import com.puspawahyuningtias_18102137.praktikum9.SettingModel
             val editor = preferences.edit()
             editor.putString(NAME, value.name)
             editor.putString(EMAIL, value.email)
+            editor.putString(ADRRESS, value.address)
             editor.putInt(AGE, value.age)
             editor.putString(PHONE_NUMBER, value.phoneNumber)
+            editor.putBoolean(JK, value.jk)
             editor.putBoolean(THEME, value.isDarkTheme)
             editor.apply()
         }
@@ -27,8 +31,10 @@ import com.puspawahyuningtias_18102137.praktikum9.SettingModel
             val model = SettingModel()
             model.name = preferences.getString(NAME, "")
             model.email = preferences.getString(EMAIL, "")
+            model.address = preferences.getString(ADRRESS, "")
             model.age = preferences.getInt(AGE, 0)
             model.phoneNumber = preferences.getString(PHONE_NUMBER, "")
+            model.jk = preferences.getBoolean(JK, false)
             model.isDarkTheme = preferences.getBoolean(THEME, false)
             return model
         }

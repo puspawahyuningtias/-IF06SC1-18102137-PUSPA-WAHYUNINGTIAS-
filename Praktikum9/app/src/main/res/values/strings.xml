@@ -6,8 +6,12 @@
     <string name="default_email">No Email</string>
     <string name="phone">Phone Number</string>
     <string name="default_phone">No Phone Number</string>
+    <string name="address">Alamat</string>
+    <string name="default_address">No Address</string>
     <string name="age">Umur</string>
     <string name="default_age">No Age</string>
+    <string name="tv_jk">Jenis Kelamin</string>
+    <string name="default_jk">Laki Laki</string>
     <string name="tv_theme">Theme Mode</string>
     <string name="default_theme">System Default</string>
     <string name="setting">SETTING</string>
@@ -21,4 +25,7 @@
     <string name="field_required">Kolom Tidak Boleh Kosong</string>
     <string name="email_is_not_valid">Email Tidak Valid</string>
     <string name="field_digit_only">Kolom Hanya Untuk Angka</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="laki2">Laki - Laki</string>
+    <string name="perempuan">Perempuan</string>
 </resources>

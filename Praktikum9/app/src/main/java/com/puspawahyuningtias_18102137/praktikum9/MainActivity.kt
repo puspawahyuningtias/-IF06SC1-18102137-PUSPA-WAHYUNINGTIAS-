@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import com.puspawahyuningtias_18102137.praktikum9.data.SettingModel
 import com.puspawahyuningtias_18102137.praktikum9.databinding.ActivityMainBinding
 import com.puspawahyuningtias_18102137.praktikum9.preference.SettingPreference
 

@@ -52,6 +52,19 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp">
             <EditText
+                android:id="@+id/edt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                android:inputType="textPostalAddress"
+                android:maxLines="1"
+                android:autofillHints="" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <EditText
                 android:id="@+id/edt_age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,6 +73,30 @@
                 android:maxLines="1"
                 android:autofillHints="" />
         </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/jenis_kelamin" />
+        <RadioGroup
+            android:id="@+id/rg_jk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_lk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/laki2" />
+            <RadioButton
+                android:id="@+id/rb_pr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/perempuan" />
+        </RadioGroup>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
