@@ -38,7 +38,7 @@ class SettingPreferenceActivity : AppCompatActivity(), View.OnClickListener {
             val address = binding.edtAddress.text.toString().trim()
             val age = binding.edtAge.text.toString().trim()
             val phoneNo = binding.edtPhone.text.toString().trim()
-            val jk = binding.rgJk.checkedRadioButtonId == R.id.rb_lk
+            val jk = binding.rgJk.checkedRadioButtonId == R.id.rb_pr
             val isLoveMU = binding.rgLoveMu.checkedRadioButtonId == R.id.rb_yes
             if (name.isEmpty()) {
                 binding.edtName.error = getString(R.string.field_required)
@@ -85,9 +85,9 @@ class SettingPreferenceActivity : AppCompatActivity(), View.OnClickListener {
         binding.edtAge.setText(settingModel.age.toString())
         binding.edtPhone.setText(settingModel.phoneNumber)
         if (settingModel.jk) {
-            binding.rbLk.isChecked = true
-        } else {
             binding.rbPr.isChecked = true
+        } else {
+            binding.rbLk.isChecked = true
         }
         if (settingModel.isDarkTheme) {
             binding.rbYes.isChecked = true
