@@ -4,6 +4,8 @@ import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -13,6 +15,8 @@ import com.puspawahyuningtias_18102137.praktikum10.databinding.ActivityQuoteAddU
 import com.puspawahyuningtias_18102137.praktikum10.db.DatabaseContract
 import com.puspawahyuningtias_18102137.praktikum10.db.DatabaseContract.QuoteColumns.Companion.DATE
 import com.puspawahyuningtias_18102137.praktikum10.db.QuoteHelper
+import com.puspawahyuningtias_18102137.praktikum10.helper.ALERT_DIALOG_CLOSE
+import com.puspawahyuningtias_18102137.praktikum10.helper.ALERT_DIALOG_DELETE
 import com.puspawahyuningtias_18102137.praktikum10.helper.EXTRA_POSITION
 import com.puspawahyuningtias_18102137.praktikum10.helper.EXTRA_QUOTE
 import com.puspawahyuningtias_18102137.praktikum10.helper.RESULT_ADD
@@ -114,6 +118,19 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
         }
+    }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        if (isEdit) {
+            menuInflater.inflate(R.menu.menu_form, menu)
+        }
+        return super.onCreateOptionsMenu(menu)
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_delete -> showAlertDialog(ALERT_DIALOG_DELETE)
+            android.R.id.home -> showAlertDialog(ALERT_DIALOG_CLOSE)
+        }
+        return super.onOptionsItemSelected(item)
     }
 
 }
