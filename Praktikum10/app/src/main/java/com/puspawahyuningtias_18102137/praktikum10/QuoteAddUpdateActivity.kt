@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.puspawahyuningtias_18102137.praktikum10.data.Quote
 import com.puspawahyuningtias_18102137.praktikum10.databinding.ActivityQuoteAddUpdateBinding
 import com.puspawahyuningtias_18102137.praktikum10.db.DatabaseContract
@@ -20,6 +21,7 @@ import com.puspawahyuningtias_18102137.praktikum10.helper.ALERT_DIALOG_DELETE
 import com.puspawahyuningtias_18102137.praktikum10.helper.EXTRA_POSITION
 import com.puspawahyuningtias_18102137.praktikum10.helper.EXTRA_QUOTE
 import com.puspawahyuningtias_18102137.praktikum10.helper.RESULT_ADD
+import com.puspawahyuningtias_18102137.praktikum10.helper.RESULT_DELETE
 import com.puspawahyuningtias_18102137.praktikum10.helper.RESULT_UPDATE
 import com.puspawahyuningtias_18102137.praktikum10.helper.categoryList
 import com.puspawahyuningtias_18102137.praktikum10.helper.getCurrentDate
@@ -132,5 +134,39 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
         }
         return super.onOptionsItemSelected(item)
     }
-
+    private fun showAlertDialog(type: Int) {
+        val isDialogClose = type == ALERT_DIALOG_CLOSE
+        val dialogTitle: String
+        val dialogMessage: String
+        if (isDialogClose) {
+            dialogTitle = "Batal"
+            dialogMessage = "Apakah anda ingin membatalkan perubahan pada form?"
+        } else {
+            dialogMessage = "Apakah anda yakin ingin menghapus item ini?"
+            dialogTitle = "Hapus Quote"
+        }
+        val alertDialogBuilder = AlertDialog.Builder(this)
+        alertDialogBuilder.setTitle(dialogTitle)
+        alertDialogBuilder
+            .setMessage(dialogMessage)
+            .setCancelable(false)
+            .setPositiveButton("Ya") { _, _ ->
+                if (isDialogClose) {
+                    finish()
+                } else {
+                    val result = quoteHelper.deleteById(quote?.id.toString()).toLong()
+                    if (result > 0) {
+                        val intent = Intent()
+                        intent.putExtra(EXTRA_POSITION, position)
+                        setResult(RESULT_DELETE, intent)
+                        finish()
+                    } else {
+                        Toast.makeText(this@QuoteAddUpdateActivity, "Gagal menghapus data", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }
+            .setNegativeButton("Tidak") { dialog, _ -> dialog.cancel() }
+        val alertDialog = alertDialogBuilder.create()
+        alertDialog.show()
+    }
 }
