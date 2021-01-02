@@ -1,6 +1,7 @@
 package com.puspawahyuningtias_18102137.praktikum10
 
-import android.R
+import android.content.ContentValues
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -9,10 +10,15 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.puspawahyuningtias_18102137.praktikum10.data.Quote
 import com.puspawahyuningtias_18102137.praktikum10.databinding.ActivityQuoteAddUpdateBinding
+import com.puspawahyuningtias_18102137.praktikum10.db.DatabaseContract
+import com.puspawahyuningtias_18102137.praktikum10.db.DatabaseContract.QuoteColumns.Companion.DATE
 import com.puspawahyuningtias_18102137.praktikum10.db.QuoteHelper
 import com.puspawahyuningtias_18102137.praktikum10.helper.EXTRA_POSITION
 import com.puspawahyuningtias_18102137.praktikum10.helper.EXTRA_QUOTE
+import com.puspawahyuningtias_18102137.praktikum10.helper.RESULT_ADD
+import com.puspawahyuningtias_18102137.praktikum10.helper.RESULT_UPDATE
 import com.puspawahyuningtias_18102137.praktikum10.helper.categoryList
+import com.puspawahyuningtias_18102137.praktikum10.helper.getCurrentDate
 
 class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
     private var isEdit = false
@@ -25,7 +31,7 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityQuoteAddUpdateBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        var spinnerAdapter= ArrayAdapter(this, R.layout.simple_list_item_1,categoryList)
+        val spinnerAdapter= ArrayAdapter(this, android.R.layout.simple_list_item_1,categoryList)
         binding.edtCategory.adapter=spinnerAdapter
         binding.edtCategory.onItemSelectedListener = object : AdapterView.OnItemSelectedListener
         {
@@ -68,7 +74,46 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnSubmit.setOnClickListener(this)
     }
 
-    override fun onClick(v: View?) {
-        TODO("Not yet implemented")
+    override fun onClick(view: View) {
+        if (view.id == R.id.btn_submit) {
+            val title = binding.edtTitle.text.toString().trim()
+            val description = binding.edtDescription.text.toString().trim()
+            if (title.isEmpty()) {
+                binding.edtTitle.error = "Field can not be blank"
+                return
+            }
+            quote?.title = title
+            quote?.description = description
+            quote?.category = category
+            val intent = Intent()
+            intent.putExtra(EXTRA_QUOTE, quote)
+            intent.putExtra(EXTRA_POSITION, position)
+            val values = ContentValues()
+            values.put(DatabaseContract.QuoteColumns.TITLE, title)
+            values.put(DatabaseContract.QuoteColumns.DESCRIPTION, description)
+            values.put(DatabaseContract.QuoteColumns.CATEGORY, category)
+            if (isEdit) {
+                val result = quoteHelper.update(quote?.id.toString(),
+                    values).toLong()
+                if (result > 0) {
+                    setResult(RESULT_UPDATE, intent)
+                    finish()
+                } else {
+                    Toast.makeText(this@QuoteAddUpdateActivity, "Gagal mengupdate data", Toast.LENGTH_SHORT).show()
+                }
+            } else {
+                quote?.date = getCurrentDate()
+                values.put(DATE, getCurrentDate())
+                val result = quoteHelper.insert(values)
+                if (result > 0) {
+                    quote?.id = result.toInt()
+                    setResult(RESULT_ADD, intent)
+                    finish()
+                } else {
+                    Toast.makeText(this@QuoteAddUpdateActivity, "Gagal menambah data", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
+
 }

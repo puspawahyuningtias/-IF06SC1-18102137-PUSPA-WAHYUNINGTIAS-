@@ -33,4 +33,17 @@ class QuoteAdapter(private val activity: Activity):
             binding.tvItemDescription.text = quote.description
         }
     }
+    fun addItem(quote: Quote) {
+        this.listQuotes.add(quote)
+        notifyItemInserted(this.listQuotes.size - 1)
+    }
+    fun updateItem(position: Int, quote: Quote) {
+        this.listQuotes[position] = quote
+        notifyItemChanged(position, quote)
+    }
+    fun removeItem(position: Int) {
+        this.listQuotes.removeAt(position)
+        notifyItemRemoved(position)
+        notifyItemRangeChanged(position, this.listQuotes.size)
+    }
 }
