@@ -6,4 +6,7 @@
     <string name="date">Date</string>
     <string name="submit">Submit</string>
     <string name="delete">Delete</string>
+    <string name="nama_depan">Nama Depan</string>
+    <string name="nama_belakang">Nama Belakang</string>
+    <string name="nama_penulis">Nama Penulis</string>
 </resources>
