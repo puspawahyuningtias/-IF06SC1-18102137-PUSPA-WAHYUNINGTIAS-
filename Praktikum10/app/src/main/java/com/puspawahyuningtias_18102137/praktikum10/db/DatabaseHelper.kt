@@ -15,8 +15,8 @@ internal class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATA
                 " ${DatabaseContract.QuoteColumns.TITLE} TEXT NOT NULL," +
                 " ${DatabaseContract.QuoteColumns.DESCRIPTION} TEXT NOT NULL," +
                 " ${DatabaseContract.QuoteColumns.CATEGORY} TEXT NOT NULL," +
-                " ${DatabaseContract.QuoteColumns.KOLOM1} TEXT NOT NULL,"+
-                " ${DatabaseContract.QuoteColumns.KOLOM2} TEXT NOT NULL,"+
+                " ${DatabaseContract.QuoteColumns.NAMA} TEXT NOT NULL,"+
+                " ${DatabaseContract.QuoteColumns.KOTA} TEXT NOT NULL,"+
                 " ${DatabaseContract.QuoteColumns.DATE} TEXT NOT NULL)"
     }
 
