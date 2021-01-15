@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "264724469912",
+    "project_id": "fir-ppb2021-ac4bb",
+    "storage_bucket": "fir-ppb2021-ac4bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264724469912:android:3d8fe8785af79acfdf58ed",
+        "android_client_info": {
+          "package_name": "com.puspawahyuningtias_18102137.praktikum11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264724469912-5hu1ci5jjtifal4hmv2kn1nhoijcccel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9PmlCD9K671R-cw1Qh4NqOtdsmX3-A6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264724469912-5hu1ci5jjtifal4hmv2kn1nhoijcccel.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
