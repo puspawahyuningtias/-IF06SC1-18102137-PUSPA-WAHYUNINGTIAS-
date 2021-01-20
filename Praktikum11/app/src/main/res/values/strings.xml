@@ -13,4 +13,11 @@
     <string name="uid">UID</string>
     <string name="verify_email">Verify Email</string>
     <string name="sign_out">Sign Out</string>
+    <string name="title">title</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+    <string name="submit">Submit</string>
+    <string name="date">Date</string>
+    <string name="delete">Delete</string>
+    <string name="quote">QUOTE</string>
 </resources>

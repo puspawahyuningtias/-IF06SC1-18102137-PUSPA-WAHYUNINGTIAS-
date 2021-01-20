@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.puspawahyuningtias_18102137.praktikum11.QuoteAddUpdateActivity
 import com.puspawahyuningtias_18102137.praktikum11.R
 import com.puspawahyuningtias_18102137.praktikum11.data.Quote
+import com.puspawahyuningtias_18102137.praktikum11.databinding.ItemQuoteBinding
 import com.puspawahyuningtias_18102137.praktikum11.helper.EXTRA_POSITION
 import com.puspawahyuningtias_18102137.praktikum11.helper.EXTRA_QUOTE
 import com.puspawahyuningtias_18102137.praktikum11.helper.REQUEST_UPDATE
