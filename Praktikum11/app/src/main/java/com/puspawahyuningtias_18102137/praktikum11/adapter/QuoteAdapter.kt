@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.puspawahyuningtias_18102137.praktikum11.R
 import com.puspawahyuningtias_18102137.praktikum11.data.Quote
+import com.puspawahyuningtias_18102137.praktikum11.helper.EXTRA_POSITION
+import com.puspawahyuningtias_18102137.praktikum11.helper.EXTRA_QUOTE
+import com.puspawahyuningtias_18102137.praktikum11.helper.REQUEST_UPDATE
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
