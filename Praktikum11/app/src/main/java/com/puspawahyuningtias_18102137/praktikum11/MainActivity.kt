@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
         binding.btnSignOut.setOnClickListener(this)
         binding.btnEmailVerify.setOnClickListener(this)
+        binding.btnDashboardQuote.setOnClickListener(this)
     }
     override fun onClick(v: View) {
         when (v.id) {
@@ -63,6 +64,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btnEmailVerify -> {
                 sendEmailVerification()
+            }
+            R.id.btnDashboardQuote ->{
+                val intent = Intent(this@MainActivity, DashboardQuoteActivity::class.java)
+                startActivity(intent)
             }
         }
     }
