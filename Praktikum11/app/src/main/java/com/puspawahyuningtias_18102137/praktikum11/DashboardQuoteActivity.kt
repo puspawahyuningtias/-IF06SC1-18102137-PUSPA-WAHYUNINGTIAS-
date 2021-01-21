@@ -35,9 +35,11 @@ class DashboardQuoteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDashboardQuoteBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportActionBar?.title = "Quotes"
+
         firestore = Firebase.firestore
         auth = Firebase.auth
+
+        supportActionBar?.title = "Quotes"
         binding.rvQuotes.layoutManager = LinearLayoutManager(this)
         binding.rvQuotes.setHasFixedSize(true)
         adapter = QuoteAdapter(this)
@@ -76,7 +78,8 @@ class DashboardQuoteActivity : AppCompatActivity() {
                         binding.rvQuotes.adapter = adapter
                         adapter.listQuotes = quotesList
                     } else {
-                        adapter.listQuotes = ArrayList()
+                        adapter.listQuotes.clear()
+                        binding.rvQuotes.adapter?.notifyDataSetChanged()
                         showSnackbarMessage("Tidak ada data saat ini")
                     }
                 }
@@ -86,6 +89,7 @@ class DashboardQuoteActivity : AppCompatActivity() {
                         this@DashboardQuoteActivity, "Error adding document",Toast.LENGTH_SHORT
                     ).show()
                 }
+
         }
     }
 
