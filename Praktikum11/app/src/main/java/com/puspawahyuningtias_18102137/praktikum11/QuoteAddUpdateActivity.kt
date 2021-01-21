@@ -7,13 +7,21 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FieldValue
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.puspawahyuningtias_18102137.praktikum11.data.Quote
 import com.puspawahyuningtias_18102137.praktikum11.databinding.ActivityQuoteAddUpdateBinding
 import com.puspawahyuningtias_18102137.praktikum11.helper.ALERT_DIALOG_CLOSE
 import com.puspawahyuningtias_18102137.praktikum11.helper.ALERT_DIALOG_DELETE
 import com.puspawahyuningtias_18102137.praktikum11.helper.EXTRA_POSITION
 import com.puspawahyuningtias_18102137.praktikum11.helper.EXTRA_QUOTE
+import com.puspawahyuningtias_18102137.praktikum11.helper.RESULT_ADD
 import kotlinx.android.synthetic.main.activity_quote_add_update.*
 
 class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
@@ -24,10 +32,14 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
     private var categorySelection: Int = 0
     private var categoryName: String = "0"
     private lateinit var binding: ActivityQuoteAddUpdateBinding
+    private lateinit var auth: FirebaseAuth
+    private lateinit var firestore: FirebaseFirestore
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityQuoteAddUpdateBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        firestore = Firebase.firestore
+        auth = Firebase.auth
         categoriesSpinnerArray = getCategories()
         quote = intent.getParcelableExtra(EXTRA_QUOTE)
         if (quote != null) {
@@ -59,11 +71,31 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun getCategories(): ArrayList<String> {
         progressbar.visibility = View.VISIBLE
+        firestore.collection("categories")
+            .whereEqualTo("is_active", true)
+            .get()
+            .addOnSuccessListener { documents ->
+                var selection = 0
+                for (document in documents) {
+                    val name = document.get("name").toString()
+                    quote?.let {
+                        if(name==it.category){
+                            categorySelection = selection
+                        }
+                    }
+                    categoriesSpinnerArray.add(name)
+                    selection++
+                }
+                setCategories(categoriesSpinnerArray)
+            }
+            .addOnFailureListener { exception ->
+                Toast.makeText(this@QuoteAddUpdateActivity, "Categories cannot be retrieved ", Toast.LENGTH_SHORT).show()
+            }
         return categoriesSpinnerArray
     }
 
     private fun setCategories(paymentMethodSpinnerAarray: ArrayList<String>) {
-        var spinnerAdapter= ArrayAdapter(this, android.R.layout.simple_list_item_1,paymentMethodSpinnerAarray)
+        val spinnerAdapter= ArrayAdapter(this, android.R.layout.simple_list_item_1,paymentMethodSpinnerAarray)
         binding.edtCategory.adapter=spinnerAdapter
         binding.edtCategory.setSelection(categorySelection)
         binding.edtCategory.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -90,7 +122,26 @@ class QuoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
             if (isEdit) {
 
             } else {
-
+                val currentUser = auth.currentUser
+                val user = hashMapOf(
+                    "uid" to currentUser?.uid,
+                    "title" to title,
+                    "description" to description,
+                    "category" to categoryName,
+                    "date" to FieldValue.serverTimestamp()
+                )
+                firestore.collection("quotes")
+                    .add(user)
+                    .addOnSuccessListener { documentReference ->
+                        Toast.makeText(this@QuoteAddUpdateActivity,
+                            "DocumentSnapshot added with ID: ${documentReference.id}",
+                            Toast.LENGTH_SHORT).show()
+                        setResult(RESULT_ADD, intent)
+                        finish()
+                    }
+                    .addOnFailureListener { e ->
+                        Toast.makeText(this@QuoteAddUpdateActivity, "Error adding document", Toast.LENGTH_SHORT).show()
+                    }
             }
         }
     }
