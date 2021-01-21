@@ -20,4 +20,11 @@
     <string name="date">Date</string>
     <string name="delete">Delete</string>
     <string name="quote">QUOTE</string>
+    <string name="phone_number_auth">Phone Number Auth</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="_62">+62</string>
+    <string name="verify">Verify</string>
+    <string name="lanjut">Continue</string>
 </resources>
