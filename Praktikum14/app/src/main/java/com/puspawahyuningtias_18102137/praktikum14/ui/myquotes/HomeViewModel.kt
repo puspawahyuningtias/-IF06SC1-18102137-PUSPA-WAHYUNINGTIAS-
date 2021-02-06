@@ -1,4 +1,4 @@
-package com.puspawahyuningtias_18102137.praktikum14.ui.notifications
+package com.puspawahyuningtias_18102137.praktikum14.ui.myquotes
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.puspawahyuningtias_18102137.praktikum14.R
 
-class NotificationsFragment : Fragment() {
+class HomeViewModel : Fragment() {
 
-    private lateinit var notificationsViewModel: NotificationsViewModel
+    private lateinit var myQuotesFragment: MyQuotesFragment
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
-                ViewModelProvider(this).get(NotificationsViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
+        myQuotesFragment =
+                ViewModelProvider(this).get(MyQuotesFragment::class.java)
+        val root = inflater.inflate(R.layout.fragment_my_quotes, container, false)
         val textView: TextView = root.findViewById(R.id.text_notifications)
-        notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
+        myQuotesFragment.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
