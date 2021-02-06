@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.puspawahyuningtias_18102137.praktikum14.ui.globalquotes.GlobalQuotesFragment"
+        android:name="com.puspawahyuningtias_18102137.praktikum14.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_global_quotes" />
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.puspawahyuningtias_18102137.praktikum14.ui.classquotes.ClassQuotesFragment"
+        android:name="com.puspawahyuningtias_18102137.praktikum14.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_class_quotes" />
+        tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.puspawahyuningtias_18102137.praktikum14.ui.myquotes.HomeViewModel"
+        android:name="com.puspawahyuningtias_18102137.praktikum14.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_my_quotes" />
+        tools:layout="@layout/fragment_notifications" />
 </navigation>

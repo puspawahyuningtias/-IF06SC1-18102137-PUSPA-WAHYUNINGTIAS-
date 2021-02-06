@@ -1,4 +1,4 @@
-package com.puspawahyuningtias_18102137.praktikum14.ui.globalquotes
+package com.puspawahyuningtias_18102137.praktikum14.ui.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.puspawahyuningtias_18102137.praktikum14.R
 
-class GlobalQuotesFragment : Fragment() {
+class DashboardFragment : Fragment() {
 
-    private lateinit var notificationsViewModel: NotificationsViewModel
+    private lateinit var dashboardViewModel: DashboardViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
-                ViewModelProvider(this).get(NotificationsViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_global_quotes, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
+        dashboardViewModel =
+                ViewModelProvider(this).get(DashboardViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
+        val textView: TextView = root.findViewById(R.id.text_dashboard)
+        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
