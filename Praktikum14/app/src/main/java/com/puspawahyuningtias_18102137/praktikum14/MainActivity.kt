@@ -15,9 +15,9 @@ import com.puspawahyuningtias_18102137.praktikum14.model.Token
 import com.puspawahyuningtias_18102137.praktikum14.ui.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var tokenPref: TokenPref
     private lateinit var token: Token
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(setOf(
-                R.id.navigation_my_quotes, R.id.navigation_class_quotes, R.id.navigation_global_quotes))
+            R.id.navigation_my_quotes, R.id.navigation_class_quotes, R.id.navigation_global_quotes))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
         tokenPref = TokenPref(this)
@@ -53,5 +53,4 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
 }

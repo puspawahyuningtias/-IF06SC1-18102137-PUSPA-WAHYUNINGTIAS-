@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_my_quotes"
-        android:name="com.puspawahyuningtias_18102137.praktikum14.ui.globalquotes.GlobalQuotesFragment"
+        android:name="com.puspawahyuningtias_18102137.praktikum14.ui.myquotes.MyQuotesFragment"
         android:label="@string/title_my_quotes"
-        tools:layout="@layout/fragment_global_quotes" />
+        tools:layout="@layout/fragment_my_quotes" />
 
     <fragment
         android:id="@+id/navigation_class_quotes"
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_global_quotes"
-        android:name="com.puspawahyuningtias_18102137.praktikum14.ui.myquotes.HomeViewModel"
+        android:name="com.puspawahyuningtias_18102137.praktikum14.ui.globalquotes.GlobalQuotesFragment"
         android:label="@string/title_global_quotes"
         tools:layout="@layout/fragment_global_quotes" />
 </navigation>
